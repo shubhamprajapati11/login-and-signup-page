@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	{{!-- <link rel="stylesheet" href="/src/public/login.css"> --}}
+</head>
+<style>
+	body{
+    overflow: hidden;
+}
+.container {
+	width: 600px;
+	margin: 0 auto;
+	justify-content: center;
+	display: flex;
+}
+#form{
+	padding-bottom: 50%;
+	width: 120%;
+    margin-top: 7%;
+	padding: 20px;
+    border-radius: 16px;
+    padding: 20% 10% 20% 10%;
+	background: white;
+	box-shadow:2px 2px 20px 1px rgb(160, 160, 160);
+}
+
+#main-heading{
+    text-align: center;
+    font-family: Samsung Sharp Sans;
+    font-size: 30px;
+    margin-top: -13%;
+	color: black;
+}
+#heading{
+	margin-top: 6%;
+	text-align: center;
+    font-family: Product Sans;
+    font-weight: 400;
+    font-size: 28px;
+}
+#heading2{
+	text-align: center;
+	font-size: 20px;
+	font-family: Product Sans;
+	font-weight: 100;
+}
+.li-container{
+	margin-top: 10%;
+}
+
+.labels{
+	margin-left: 1%;
+	/* font-weight: ; */
+	font-size: 20px;
+	display: block;
+	margin-bottom: 5px;
+    font-family: Product Sans;
+}
+.inputs{
+	margin-top: 1%;
+	width: 100%;
+	padding: 15px;
+	margin-bottom: 10px;
+	border: 3px solid #ccc;
+	border-radius: 10px;
+    font-family: Product Sans;
+	font-weight:500;
+	font-size: 19px;
+	box-sizing: border-box;
+	outline: none;
+	-webkit-transition: 0.3s;
+  	transition: 0.3s;
+}
+.inputs:focus{
+	border-color: rgb(0, 0, 168);
+}
+#buttons{
+	display: flex;
+	margin-top: 10%;
+	margin-bottom: -10%;
+}
+#submit-btn{
+	
+	margin-left: 51%;
+	background-color:rgb(1, 1, 197);
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+    font-size: 18px;
+	font-family: Product Sans;
+}
+#ca-btn{
+	/* margin-left: -3%; */
+	background-color:white;
+	color: #0101C5;
+	font-weight: 550;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+    font-size: 18px;
+	font-family: Product Sans;
+	padding: 10px;
+}
+#ca-btn:hover{
+	background-color: rgba(71, 92, 255, 0.4);
+
+}
+#submit-btn:hover {
+	background-color: rgb(0, 0, 123);
+}
+</style>
+<body id="body-element" style="background-image: url(image/mesh.png);">
+
+
+
+	<div class="container">
+		<form id="form" action="/login" method="POST">
+			<div id="mainhead-container">
+				<h1 id="main-heading">This is Login Page</h1>
+			</div>
+            <h1 id="heading">Sign in</h1>
+			<h1 id="heading2">Use your Account Credentials</h1>
+			
+			<div class="li-container">
+				<label  class="labels" for="username">Username</label>
+				<input class="inputs" type="text" id="username" name="username" placeholder="Enter username">
+
+				<label style="margin-top: 3%;" class="labels" for="password">Password</label>
+				<input class="inputs" type="password" id="password" name="password" placeholder="Enter password">
+			</div>
+			
+			<div id="buttons">
+				<a onclick="window.location = './register'"><input id="ca-btn" type="button" value="Create Account"></a>
+				<input id="submit-btn" type="submit" value="Login">
+			</div>
+		</form>
+	</div>
+
+</body>
+</html>

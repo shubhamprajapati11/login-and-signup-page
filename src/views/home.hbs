@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        font-family: Product Sans;
+        text-align: center;
+        margin-top: 18%;
+        font-size: 60px;
+        line-height: 1%;
+    }
+    .con{
+        text-align: center;
+        font-size: 25px;
+        font-family: Product Sans;
+        font-weight: 200;
+    }
+    .btn-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .btn{
+        font-size: 26px;
+        /*margin-left: 6%;
+        margin-right: 6%;*/
+        margin-top: 3%;
+        background-color:rgb(1, 1, 197);
+	    color: white;
+	    padding: 10px 20px;
+	    border: none;
+	    border-radius: 6px;
+	    cursor: pointer;
+        font-size: 18px;
+	    font-family: Product Sans;
+    }
+</style>
+<body>
+    <h1 class="container">This is Our Home Page</h1>
+    <h4 class="con">Here you can login or register</h4>
+    <form>
+        <div class="btn-container">
+            <a style="margin-right: 5%; margin-top:2%" onclick="window.location = './login'"><input type="button" value="LOGIN" class="btn"></a>
+            <a style="margin-left: 5%; margin-top:2%" onclick="window.location = './register'"><input type="button" value="SIGNUP" class="btn"></a>
+        
+        </div>
+        
+    </form>
+</body>
+</html>
